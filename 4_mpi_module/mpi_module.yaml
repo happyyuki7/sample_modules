@@ -1,4 +1,4 @@
-moduleIdentifier:
+amlmoduleIdentifier:
   namespace: microsoft.com/office
   moduleName: Mpi Module
   moduleVersion: 1.0.0
