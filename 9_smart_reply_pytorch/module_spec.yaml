@@ -191,7 +191,7 @@ implementation:
     - --architecture
     - inputValue: architecture
     - - --pretrained_model_file
-    - inputValue: pretrained_model_file
+      - inputValue: pretrained_model_file
     - --run_mode
     - inputValue: run_mode
     - --load_from
