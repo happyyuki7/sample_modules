@@ -170,65 +170,65 @@ implementation:
     image: mcr.microsoft.com/azureml/bert:pretrain-openmpi3.1.2-cuda10.0-cudnn7-ubuntu16.04
     command: [/opt/miniconda/envs/amlbert/bin/python, smartreply/models/matching/driver.py]
     args:
-    - --train_input_dir
-    - inputPath: train_input_dir
-    - --valid_input_dir
-    - inputPath: valid_input_dir
-    - --gmr_input_dir
-    - inputPath: gmr_input_dir
-    - --vocab_input_dir
-    - inputPath: vocab_input_dir
-    - --rsp_input_dir
-    - inputPath: rsp_input_dir
-    - --pretrained_model_path
-    - inputPath: pretrained_model_path
-    - --model_input_dir
-    - inputPath: model_input_dir
+    - - --train_input_dir
+      - inputPath: train_input_dir
+    - - --valid_input_dir
+      - inputPath: valid_input_dir
+    - - --gmr_input_dir
+      - inputPath: gmr_input_dir
+    - - --vocab_input_dir
+      - inputPath: vocab_input_dir
+    - - --rsp_input_dir
+      - inputPath: rsp_input_dir
+    - - --pretrained_model_path
+      - inputPath: pretrained_model_path
+    - - --model_input_dir
+      - inputPath: model_input_dir
     - --model_output_dir
     - outputPath: model_output_dir
     - --eval_output_dir
     - outputPath: eval_output_dir
-    - --architecture
-    - inputValue: architecture
-    - - --pretrained_model_file
+    - - --architecture
+      - inputValue: architecture
+    - - - --pretrained_model_file
       - inputValue: pretrained_model_file
-    - --run_mode
-    - inputValue: run_mode
-    - --load_from
-    - inputValue: load_from
-    - --max_epochs
-    - inputValue: max_epochs
-    - --lm_alpha
-    - inputValue: lm_alpha
-    - --batch_size
-    - inputValue: batch_size
-    - --batch_size_infer
-    - inputValue: batch_size_infer
-    - --learning_rate
-    - inputValue: learning_rate
-    - --max_msg_len
-    - inputValue: max_msg_len
-    - --max_rsp_len
-    - inputValue: max_rsp_len
-    - --decay_step
-    - inputValue: decay_step
-    - --decay_rate
-    - inputValue: decay_rate
-    - --warmup_proportion
-    - inputValue: warmup_proportion
-    - --loss_scale
-    - inputValue: loss_scale
-    - --tokenizer
-    - inputValue: tokenizer
-    - --gradient_accumulation_steps
-    - inputValue: gradient_accumulation_steps
-    - --optimizer
-    - inputValue: optimizer
-    - --validation_freq
-    - inputValue: validation_freq
-    - --save_freq
-    - inputValue: save_freq
-    - --manual_seed
-    - inputValue: manual_seed
-    - --infer_batches
-    - inputValue: infer_batches
+    - - --run_mode
+      - inputValue: run_mode
+    - - --load_from
+      - inputValue: load_from
+    - - --max_epochs
+      - inputValue: max_epochs
+    - - --lm_alpha
+      - inputValue: lm_alpha
+    - - --batch_size
+      - inputValue: batch_size
+    - - --batch_size_infer
+      - inputValue: batch_size_infer
+    - - --learning_rate
+      - inputValue: learning_rate
+    - - --max_msg_len
+      - inputValue: max_msg_len
+    - - --max_rsp_len
+      - inputValue: max_rsp_len
+    - - --decay_step
+      - inputValue: decay_step
+    - - --decay_rate
+      - inputValue: decay_rate
+    - - --warmup_proportion
+      - inputValue: warmup_proportion
+    - - --loss_scale
+      - inputValue: loss_scale
+    - - --tokenizer
+      - inputValue: tokenizer
+    - - --gradient_accumulation_steps
+      - inputValue: gradient_accumulation_steps
+    - - --optimizer
+      - inputValue: optimizer
+    - - --validation_freq
+      - inputValue: validation_freq
+    - - --save_freq
+      - inputValue: save_freq
+    - - --manual_seed
+      - inputValue: manual_seed
+    - - --infer_batches
+      - inputValue: infer_batches
