@@ -192,8 +192,8 @@ implementation:
     - inputValue: architecture
     - - --pretrained_model_file
       - inputValue: pretrained_model_file
-    - - --run_mode
-      - inputValue: run_mode
+    - --run_mode
+    - inputValue: run_mode
     - - --load_from
       - inputValue: load_from
     - - --max_epochs
