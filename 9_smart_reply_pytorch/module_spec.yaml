@@ -188,8 +188,8 @@ implementation:
     - outputPath: model_output_dir
     - --eval_output_dir
     - outputPath: eval_output_dir
-    - - --architecture
-      - inputValue: architecture
+    - --architecture
+    - inputValue: architecture
     - - --pretrained_model_file
       - inputValue: pretrained_model_file
     - - --run_mode
