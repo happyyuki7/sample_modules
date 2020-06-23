@@ -25,7 +25,7 @@ outputs:
     type: DataFrameDirectory
 implementation:
   container:
-    image: mcr.microsoft.com/azureml/base:intelmpi2018.3-ubuntu16.04
+    image: zzn2/azureml_sdk
     command: [python, module_entry.py]
     args: [
       --input, {inputPath: Input Port },
